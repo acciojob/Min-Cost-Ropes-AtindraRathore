@@ -3,9 +3,8 @@ function mincost(arr)
 //write your code here
 // return the min cost
 	let cost = 0;
-	
+	arr.sort();
   while(arr.length>1){
-	  arr.sort();
 	  let a = arr.shift();
 	  let b = arr.shift();
        let sum = a+b;
