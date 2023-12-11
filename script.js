@@ -9,8 +9,8 @@ function mincost(arr)
 	let cost = 0;
 	
   while(arr.length>1){
-	  let a = pq.dequeue();
-	  let b = pq.dequeue();
+	  let a = pq.remove();
+	  let b = pq.remove()
        let sum = a+b;
        console.log(arr);
 	  cost = cost+ sum;
