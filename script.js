@@ -4,13 +4,13 @@ function mincost(arr)
 //write your code here
 // return the min cost
 	for(let i=0;i<arr.length;i++){
-		pq.add(arr[i]);
+		pq.enqueue(arr[i]);
 	}
 	let cost = 0;
-	arr.sort();
+	
   while(arr.length>1){
-	  let a = pq.pop();
-	  let b = pq.pop();
+	  let a = pq.dequeue();
+	  let b = pq.dequeue();
        let sum = a+b;
        console.log(arr);
 	  cost = cost+ sum;
