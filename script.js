@@ -8,12 +8,12 @@ function mincost(arr)
 	
   while(arr.length>1){
 	  arr.sort((a,b)=>{ return a-b});
-	  let a = pq.remove();
-	  let b = pq.remove()
+	  let a = arr.shift(); 
+	  let b = arr.shift();
        let sum = a+b;
        console.log(arr);
 	  cost = cost+ sum;
-	  pq.add(sum);
+      arr.push(sum);
 	 
   }
 	return cost;
